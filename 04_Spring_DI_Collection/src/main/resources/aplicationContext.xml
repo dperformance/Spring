@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="collectionBean" class="di_collection.CollectionBean">
+		<!-- List 타입에 대한 설정(의존주입 DI) -->
+		<property name="addressList">
+			<list>
+				<value>서울시 강남구 역삼동</value>
+				<value>서울시 강남구 서초동</value>
+				<value>서울시 강남구 서초동</value>
+				<value>10</value>
+			</list>
+		</property>
+		
+		<!-- Set 타입에 대한 설정(중복데이터를 저장하지 않고 하나만 저장한다.) -->
+		<property name="addressSet">
+			<!-- <set value-type="java.Lang.String">  -->
+			<set>
+				<value>일산시</value>
+				<value>수원시</value>
+				<value>삼성동</value>
+				<value>삼성동</value>
+				<value>1000000000</value>
+				<value>1000000000</value>
+			</set>
+		</property>
+		
+		<!-- Map 타입에 대한 설정 (key, value) -->
+		<property name="addressMap">
+			<map>
+			
+				<!-- 태그만 사용하는 작성 예 -->
+				<entry>
+					<key>
+						<value>홍길동</value>
+					</key>
+					<value>서울시 강남구 역삼동에 거주</value>
+				</entry>
+				
+				<!-- 속성을 사용하는 방식 -->
+				<entry key="코돌쓰" value="일산 정발산동" />
+				<entry key="코숭쓰" value="일산 정발산동" />
+			</map>
+		</property>
+		
+		<!-- Properties 타입에 대한 설정(key, value 형태) -->
+		<property name="addressProperties">
+			<props>
+				<prop key="코돌쓰">일산 정발산동</prop>
+				<prop key="코숭쓰">일산 정발산동</prop>
+				<prop key="나영쓰">일산 정발산동</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>
