@@ -24,8 +24,8 @@ public class LgTV implements TV {
 	}
 
 	//--------------------------------
-	public void initMethod() {
-		System.out.println("LgTV - initMethod() 실행");
+	public void initMethodd() {
+		System.out.println("LgTV - initMethodd() 실행");
 	}
 	public void destroyMethod() {
 		System.out.println("LgTV - destroyMethod() 실행");

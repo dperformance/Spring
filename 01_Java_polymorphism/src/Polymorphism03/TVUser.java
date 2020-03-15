@@ -7,6 +7,7 @@ public class TVUser {
 		BeanFactory factory = new BeanFactory();
 		//TV tv = (TV) factory.getBean("samsung");
 
+		System.out.println("args Data : " + args.length);
 		TV tv = (TV) factory.getBean(args[0]);
 		tv.powerOn();
 		tv.volumnUp();

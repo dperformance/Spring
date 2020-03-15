@@ -1,12 +1,12 @@
 package polymorphism01;
 
 public class SamsungTV implements TV {
-	private SonySpeaker speaker;
+	private SonySpeaker speakerk;
 	
 	public SamsungTV() {
 		System.out.println(">> SamsungTV 생성");
 		//필드 SonySpeaker에 객체 주입
-		speaker = new SonySpeaker();
+		speakerk = new SonySpeaker();
 	}
 	
 	public void powerOn() {
@@ -17,11 +17,11 @@ public class SamsungTV implements TV {
 	}
 	public void volumnUp() {
 		System.out.println("SamsungTV - 소리크게");
-		speaker.volumnUp();
+		speakerk.volumnUp();
 	}
 	public void volumnDown() {
 		System.out.println("SamsungTV - 소리작게");
-		speaker.volumnDown();
+		speakerk.volumnDown();
 	}
 	
 	//--------------------------------

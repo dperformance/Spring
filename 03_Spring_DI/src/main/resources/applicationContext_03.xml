@@ -40,9 +40,7 @@
 	<bean id="sony3" class="polymorphism03.SonySpeaker" />
 	
 	<!-- p: 접두어(prefix) 사용방식(네임스페이스에 xmlns:p 추가) -->
-	<bean id="tv3Samsung2" class="polymorphism03.SamsungTV"
-		p:speaker-ref="sony3" p:price="4560000"
-		p:width="220" p:height="110" />
+	<bean id="tv3Samsung2" class="polymorphism03.SamsungTV" p:speaker-ref="sony3" p:price="4560000" p:width="220" p:height="110" />
 </beans>
 
 
